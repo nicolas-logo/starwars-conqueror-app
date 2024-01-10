@@ -1,0 +1,172 @@
+@import './../../App.css';
+
+
+body {
+  overflow-x: hidden;
+  background-color: #000;
+  color: white !important;
+
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../../public/images/stars.png') repeat top center;
+    animation: stars 20s linear infinite;
+    z-index: -1;
+  }
+}
+
+@keyframes stars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2000px;
+  }
+}
+
+.planet-details-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important; 
+  background-color: #ffffff00 !important;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* RotatingImage.css */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.table>:not(caption)>*>* {
+  background-color: #f2f2f2;
+}
+
+.hover-highlight {
+  background-color: #f2f2f2;
+  padding: 2px !important;
+}
+
+.hover-highlight:hover {
+  background-color: #e6e6e6 !important;
+  cursor: pointer !important;
+}
+
+.container {
+  max-width: 1720px !important;
+}
+
+.table-container {
+  max-width: 1300px;
+  margin-top: 50px;
+}
+
+.btn {
+  margin: 15px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.list-group {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 20px !important;
+  margin-bottom: 50px !important;
+}
+
+InfoMessages {
+  margin-top: 30px;
+}
+
+.btn-success {
+  background-color: #174a33 !important
+}
+
+.btn-danger {
+  background-color: #7e1b24 !important;
+}
+
+.list-group-item {
+  padding: 5px !important;
+}
+
+.sandbox-link {
+  cursor: pointer;
+}
+
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kgGExh {
+  min-width: 200px !important;
+}
+
+.rdt_TableCell:not(:last-of-type) {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.planets-table {
+  border-width: thick;
+  border-color: black;
+  padding: 20px;
+  background: #e1e1e1bf;
+}
+
+.rdt_TableBody, .rdt_Table, .rdt_ExpanderRow {
+  background-color: #ffffff00 !important;
+}
+
+.planets-table a {
+  color: white;
+}
+
+.btn-search {
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-size: 25px !important;
+}
+
+.btn-group .btn {
+  margin-left: 0px;
+  margin-right: 0px;
+  font-weight: bold;
+}
+
+.hidden-columns-container {
+  color: black;
+  text-align: left;
+  font-size: 13px;
+}
+
+// hide page size since is not developed
+.rdt_Pagination > *:nth-child(-n+2) {
+  display: none;
+}
+
+.btn-outline-primary {
+  --bs-btn-active-bg: #003687 !important;
+  //--bs-btn-color: white !important;
+}
+
+.btn-outline-danger {
+  --bs-btn-active-bg: #7e1b24 !important;
+  //--bs-btn-color: white !important;
+}
+
+.filter-header {
+  margin-top: 20px;
+}
+
+

@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  mongo:
+    container_name: mongo_planets_db
+    image: mongo
+    ports:
+      - "27017:27017"
+    logging:
+      driver: none
+    command: mongod --quiet --logpath /dev/null
+
+  planets-api:
+    container_name: planets_api
+    build:
+      context: ./planets-api
+    ports:
+      - "4000:4000"
+    links:
+      - mongo
+    depends_on:
+      - mongo
+
+  planets-web:
+    container_name: planets_web
+    build:
+      context: ./planets-web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - planets-api
