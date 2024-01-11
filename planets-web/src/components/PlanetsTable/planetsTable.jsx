@@ -62,25 +62,23 @@ const PlanetsTable = ({ planets, currentPage, totalPages, fetchPlanets }) => {
           placeholder="Select columns to hide..."
         />
       </div>
-      {
-        <DataTable
-          title='Planets'
-          columns={columns.filter(column => !hiddenColumns.includes(column.value))}
-          data={planets}
-          pagination
-          paginationServer
-          expandableRowsComponent={(row) => <PlanetDetails row={row} />}
-          expandableRows
-          paginationTotalRows={totalPages * planets.length}
-          onChangePage={page => handleTableChange(page)}
-          paginationDefaultPage={currentPage}
-          subHeader
-          conditionalRowStyles={conditionalRowStyles}
-          highlightOnHover
-          dense
-          noHeader
-        />
-      }
+      <DataTable
+        title='Planets'
+        columns={columns.filter(column => !hiddenColumns.includes(column.value))}
+        data={planets}
+        pagination
+        paginationServer
+        expandableRowsComponent={(row) => <PlanetDetails row={row} />}
+        expandableRows
+        paginationTotalRows={totalPages * planets.length}
+        onChangePage={page => handleTableChange(page)}
+        paginationDefaultPage={currentPage}
+        subHeader
+        conditionalRowStyles={conditionalRowStyles}
+        highlightOnHover
+        dense
+        noHeader
+      />
     </div>
   )
 }
