@@ -78,6 +78,7 @@ const PlanetsTable = ({ planets, currentPage, totalPages, fetchPlanets }) => {
         highlightOnHover
         dense
         noHeader
+        expandableRowsComponentMemo
       />
     </div>
   )

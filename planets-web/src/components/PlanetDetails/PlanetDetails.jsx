@@ -13,7 +13,6 @@ const PlanetDetails = ({ row }) => {
   const { name } = row.data
   const general = useSelector((state) => state.general)
 
-  console.log('planetDetails render')
   // Define a memoized function to get the request token
   const getRequestToken = useMemo(() => async () => {
     requestToken = await GetRequestToken()
