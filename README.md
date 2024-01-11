@@ -21,8 +21,8 @@ In this app you will be using the [Star Wars API](https://swapi.dev/documentatio
 
 ### Lobby
 - When you first enter the app you will be asked for your Syth name.
-- Your Syth name will be stored on the browser's local storage, so you don't have to enter it again at least you want to.
-- Your Syth name will be used to update the status of Planets and to save your columns filter of the table.
+- Your Syth (conqueror) name will be stored on the browser's local storage, so you don't have to enter it again at least you want to.
+- Your Syth (conqueror) name will be used to update the status of Planets and to save your columns filter of the table.
 ![image](https://github.com/nicolas-logo/starwars-conqueror-app/assets/26005281/4923beae-ba6c-4367-99d6-4bbb08e3a767)
 
 
@@ -40,12 +40,12 @@ In this app you will be using the [Star Wars API](https://swapi.dev/documentatio
 
 ### Planet management
 - If you expand the row of a Planet you will see actions to do on that Planet.
-- You will see the Name of the planet and an image of it, if there is no image for that planet a default one is shown.
+- You will see the Name of the planet along with an image of it, if there is no image for that planet a default one is shown.
 - The image's speed rotation depends on the ROTATION PERIOD of the Planet.
 - You will see the Current Status of the Planet (CONQUERER or AVAILABLE).
 - If the Planet is AVAILABLE you can conquer it.
-- If the Planet is CONQUERER but is conquered by you, you can leave it.
-- If the Planet is CONQUERER and the Conquerer is another Syth, you can't do anything on that Planet.\
+- If the Planet is CONQUERED but is conquered by you, you can leave it.
+- If the Planet is CONQUERED and the Conquerer is another Syth, you can't do anything on that Planet.\
 ![planet1](https://github.com/nicolas-logo/starwars-conqueror-app/assets/26005281/6a90b6c9-e493-47e0-a121-86a3e35bc4b4)![planet2](https://github.com/nicolas-logo/starwars-conqueror-app/assets/26005281/f0eb941a-bf3c-4dcd-acfc-6462f4b20753)![planet3](https://github.com/nicolas-logo/starwars-conqueror-app/assets/26005281/a74dcd0f-ce27-40d9-a682-26b476cf99e1)
 
 
